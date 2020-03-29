@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galle"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/register_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:id="@+id/register_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_name_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <EditText
+        android:id="@+id/register_editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="REGISTER"
+        android:background="@drawable/input_design"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

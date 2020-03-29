@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:text="Hotel Name"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/product_description_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details"
+        android:text="Description of Hotel"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/product_price_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_description_details"
+        android:text="Hotel Price"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/number_btn"
+        android:layout_width="379dp"
+        android:layout_height="87dp"
+        android:elevation="6dp"
+        android:gravity="center"
+        app:backGroundColor="@color/colorPrimary"
+        app:finalNumber="50"
+        app:initialNumber="1"
+        app:textSize="16dp"
+        android:layout_below="@+id/product_price_details"
+        android:layout_marginTop="10dp">
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+<!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_product_to_cart_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        android:layout_below="@id/number_btn"
+        android:layout_alignParentRight="true" />
+-->
+    <Button
+        android:id="@+id/pd_add_to_cart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Booking Hotel">
+    </Button>
+
+</RelativeLayout>
